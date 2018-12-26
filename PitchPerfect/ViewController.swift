@@ -17,10 +17,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     @IBAction func recordAudio(_ sender: Any) {
         print("record button was pressed")
         recordingLabel.text = "Recording in Progress"
     }
     
+    @IBAction func stopRecording(_ sender: AnyObject) {
+        print("stop recording button was pressed")
+        
+    }
 }
 
